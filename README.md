@@ -36,7 +36,7 @@ The main simulation step `substep` function is intentionally left blank. You sha
 There are plenty of room for hacking! We suggest a few of them for you to start with:
 - Higher resolution simulations utilizing sparse data structures
 - More sophisticated boundary handling and better scenes
-- Better particle initialization with arbitaray shapes
+- Better particle initialization with arbitrary shapes
 - Faster P2G step without floating point atomic operations (integers are fine)
 - Higher order time integration methods
 - Implicit time integration methods
