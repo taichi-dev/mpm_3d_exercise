@@ -6,7 +6,7 @@ ti.init(arch=ti.gpu) # you may want to change the arch to ti.vulkan manually if 
 # simulation/discretization constants
 dim = 3
 quality = 1  # Use a larger value for higher-res simulations
-n_particles, n_grid = 9000 * quality**3, 128 * quality
+n_particles, n_grid = 8192 * quality**3, 32 * quality
 dt = 2e-4
 dx = 1.0 / n_grid
 
@@ -151,7 +151,7 @@ preset_names = [
 curr_preset_id = 0
 paused = False
 use_random_colors = False
-particles_radius = 0.01
+particles_radius = 0.01 / 2**(quality-1)
 
 material_colors = [(0.1, 0.6, 0.9), (0.93, 0.33, 0.23), (1.0, 1.0, 1.0)]
 
