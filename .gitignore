@@ -1,4 +1,5 @@
 .DS_Store
 *.png
 *.mp4
+imgui.ini
 .idea
